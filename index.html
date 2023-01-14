@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h3>Weather For <span name="cityName" id="cityName">Delhi</span></h3>
+        <div class="searchbox">
+            <div class="searchbar">
+                <input type="text" name="search_filed" class="search_filed" id="search_filed" placeholder="Enter Your City">
+            </div>
+            <div class="btn">
+                <button id="searchbtn" class="searchbtn">Search</button>
+            </div>
+        </div>
+        <div class="weather_box">
+            <div class="box">
+                <div class="heading">Temperatures</div>
+                <div class="info">
+                    <div class="temp_deg">
+                        <h2 id="temp_deg"><span id="temp_info">0</span>&deg;C</h2>
+                    </div>
+                    <div class="details">
+                        <div class="temp">Temperature is <span id="temp">0</span></div>
+                        <div class="my_temp">Min. Temperatures is <span id="min_temp">0</span></div>
+                        <div class="mins_temp">Mins Temperatures is <span id="max_temp">0</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="heading">Humidity</div>
+                <div class="info">
+                    <div class="temp_deg">
+                        <h2 id="temp_deg"><span id="temp_info">0</span>%</h2>
+                    </div>
+                    <div class="details">
+                        <div class="temp">Wind Degree is <span id="wind_degrees">0</span></div>
+                        <div class="my_temp">Feel Like is <span id="feels_like">0</span></div>
+                        <div class="mins_temp">Humidity is <span id="humidity">0</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="heading">Wind</div>
+                <div class="info">
+                    <div class="temp_deg">
+                        <h2 id="temp_deg"><span id="wind_speed">0</span>km/hr</h2>
+                    </div>
+                    <div class="details">
+                        <div class="temp">Wind Speed is <span id="wind_speed">0</span></div>
+                        <div class="my_temp">Sunrise Time is <span id="sunrise">0</span></div>
+                        <div class="mins_temp">Sunset Time is <span id="sunset">0</span></div>
+                    </div>
+                </div>
+            </div>                                                                
+        </div>
+    </div>
+    <script src="weather_app.js"></script>
+    <!-- <script src="test.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+</html>
